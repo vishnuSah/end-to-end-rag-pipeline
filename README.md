@@ -157,6 +157,6 @@ It demonstrates how vector search helps retrieve relevant information from docum
 **Description:**
 
 ```text
-End-to-end RAG pipeline for PDF question answering using Databricks, FAISS, Sentence Transformers, and Groq.
+End-to-end RAG pipeline for PDF question answering using Databricks, FAISS, Sentence Transformers, and Groq
 ```
 
