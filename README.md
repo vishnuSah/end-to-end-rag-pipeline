@@ -1,6 +1,6 @@
 # 📚 PDF RAG using Databricks, FAISS & Groq
 
-A beginner-friendly Retrieval-Augmented Generation (RAG) project that answers questions from a PDF using semantic search and an LLM. The solution extracts text from a PDF, creates embeddings, stores them in a FAISS vector database, retrieves relevant chunks for a user query, and generates context-aware answers using Groq. Built from pdf-rag-databricks.py.
+A beginner-friendly Retrieval-Augmented Generation (RAG) project that answers questions from a PDF using semantic search and an LLM. The solution extracts text from a PDF, creates embeddings, stores them in a FAISS vector database, retrieves relevant chunks for a user query, and generates context-aware answers using Groq. Built from pdf-rag-databricks.py
 
 ---
 
@@ -84,7 +84,7 @@ flowchart LR
 ```text
 Project
 │
-├── build-RAG.py
+├── pdf-rag-databricks.py
 │
 └── Databricks Volume
     (/Volumes/retail_project/default/rag_docs/)
