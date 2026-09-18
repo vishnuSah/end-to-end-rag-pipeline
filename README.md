@@ -34,21 +34,25 @@ A beginner-friendly Retrieval-Augmented Generation (RAG) project that answers qu
           (Databricks Volumes)
 
 ================================================
-
+```
 ```mermaid
 flowchart LR
-    A[PDF Document] --> B[Text Extraction]
-    B --> C[Chunking]
-    C --> D[Sentence Transformer Embeddings]
-    D --> E[FAISS Index]
 
-    F[User Question] --> G[Query Embedding]
-    G --> H[FAISS Similarity Search]
-    E --> H
+    subgraph Indexing
+        A[PDF Document] --> B[Text Extraction]
+        B --> C[Chunking]
+        C --> D[Generate Embeddings]
+        D --> E[FAISS Index]
+    end
 
-    H --> I[Top Relevant Chunks]
-    I --> J[Groq LLM]
-    J --> K[Final Answer]
+    subgraph Retrieval
+        F[User Question] --> G[Query Embedding]
+        G --> H[FAISS Search]
+        E --> H
+        H --> I[Relevant Chunks]
+        I --> J[Groq LLM]
+        J --> K[Final Answer]
+    end
 ```
 
 ---
